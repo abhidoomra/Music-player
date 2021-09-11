@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body{
+    font-family: "Roboto",sans-serif;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: #0C1027;
+}
+
+.studio{
+    width:100%;
+    margin:auto;
+}
+
+/* -----starting nav styling----- */
+/* 
+        navigation structure:-
+        left                right
+        icon:img,text       search:input,searchicon,mic
+        fav:link            bell:bellicon,belldot
+                            profile:profileimg  
+*/
+.studioNav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:50px;
+    position:fixed;
+    width:inherit;
+}
+.studioNav__left{
+    width: 250px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.studioNav__studioIcon{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.studioNav__logoImg{
+    height:50px;
+}
+.studioNav__text{
+    margin-left: 10px;
+}
+.studioNav__text-fade{
+    font-weight: 300 ;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.studioNav__text-bold{
+    color:#FFFFFF;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.studioNav__link{
+    color: #FDFDFD;
+    text-decoration: none;
+}
+/* .studioNav__link:hover{
+    text-decoration: none;
+} */
+.studioNav__right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+}
+.studioNav__search{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    position:relative;
+}
+.studioNav__searchIcon{
+    color:#92A7B2;
+    position: absolute;
+    left: 10px;
+}
+.studioNav__searchInput{
+    width:250px;
+    outline:none;
+    border: none;
+    padding: 10px 40px;
+    background-color: #12193E;
+    color:#FFFFFF;
+    border-radius: 10px;
+}
+.studioNav__searchMic{
+    color:#92A7B2;
+    position:absolute;
+    right:10px;
+}
+.studioNav__bell
+{
+    position:relative;
+}
+.studioNav__bellIcon
+{
+    color: #E6E6E6;
+    font-size:23px;
+}
+.studioNav__bellDot{
+    width:8px;
+    height:8px;
+    background-color: red;
+    border-radius: 50%;
+    right:0;
+    position:absolute;
+}
+.studioNav__profileImg{
+    height:50px;
+    border-radius: 50%;
+}
+/* -----ending navigation styling----- */
+
+

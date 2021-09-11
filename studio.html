@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="studio.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- used BEM naming convension -->
+<div class="studio">
+    <!-- navigation structure:-
+        left                right
+        icon:img,text       search:input,searchicon,mic
+        fav:link            bell:bellicon,belldot
+                            profile:profileimg    
+    -->
+    <nav class="studioNav">
+        <div class="studioNav__left">
+            <div class="studioNav__studioIcon">
+                    <img class="studioNav__logoImg" src="images/3336940_music_player_icon.png" alt="Music Disc"/>
+                    <div class="studioNav__text">
+                        <div class="studioNav__text-fade">Ninja</div>
+                        <div class="studioNav__text-bold">Studio</div>
+                    </div>
+            </div>
+            <div class="studioNav__fav">
+                <a href="" class="studioNav__link">Favourites</a>
+            </div>
+        </div>
+        <div class="studioNav__right">
+            <div class="studioNav__search">
+                <i class="fas fa-search studioNav__searchIcon"></i>
+                <input
+              class="studioNav__searchInput"
+              type="text"
+              placeholder="Search"
+                />
+                <i class="fas fa-microphone studioNav__searchMic"></i>
+            </div>
+            <div class="studioNav__bell">
+                <i class="fas fa-bell studioNav__bellIcon"></i>
+                <span class="studioNav__bellDot"></span>
+            </div>
+            <div class="studioNav__profile">
+                <img class="studioNav__profileImg" src="images/loki-avatar.png" alt="Profile">
+            </div>
+        </div>
+    </nav>
+    <!--  -->
+    <div class="studioBody"></div>
+    <!--  -->
+    <div class="studioPlayer"></div>
+</div>
+</body>
+</html>
